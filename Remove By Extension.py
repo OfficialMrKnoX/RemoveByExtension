@@ -19,7 +19,7 @@ conf = input("Do you want to delete all files(y/n): ")
 if conf == 'y':
     for f in files:
         try:
-            print('Deleting', f)
+            print('Deleting...', f)
             os.remove(f)
         except OSError as e:
             print('\n', e, '\n')
